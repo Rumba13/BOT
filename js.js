@@ -2,7 +2,6 @@
 
 
 const { Telegraf, Markup } = require('telegraf')
-require('dotenv').config();
 var ctxV = null
 let url = 'https://rt.pornhub.com/';
 const bot = new Telegraf('5083324030:AAH0bYYyxcEymbAfSFeHCZ7-nhyRapMxC-E')
