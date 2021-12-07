@@ -1,6 +1,3 @@
-
-
-
 const { Telegraf, Markup } = require('telegraf')
 require('dotenv').config();
 var ctxV = null
@@ -9,7 +6,18 @@ const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.start((ctx) => ctx.reply('Я т11888ебе помогать не обязан'))
 bot.help((ctx) => ctx.reply('Я т11ебе помогать не обязан'))
 bot.on('sticker', (ctx) => ctx.reply('👍'))
+var express = require('express');
+var app = express();
 
+//! WEBHOOK-WEBHOOK-WEBHOOK-WEBHOOK-WEBHOOK-WEBHOOK-WEBHOOK-WEBHOOK
+app.set('port', (process.env.PORT || 5000));
+app.get('/', function (request, response) {
+	var result = 'App is running'
+	response.send(result);
+}).listen(app.get('port'), function () {
+	console.log('App is running, server is listening on port ', app.get('port'));
+});
+//!WEBHOOK-WEBHOOK-WEBHOOK-WEBHOOK-WEBHOOK-WEBHOOK-WEBHOOK-WEBHOOK
 
 bot.hears('lapit', (ctx) => ctx.reply('НИХУ1!!1111 нЕ АДНАГО 99919	888слова блядь'))
 bot.hears('Влад лох', (ctx) => ctx.reply('Пошёл нахуй пидарсич Сам лох чмо ебАне'))
