@@ -2,12 +2,12 @@ const { Telegraf, Markup } = require('telegraf')
 var ctxV = null
 let url = 'https://rt.pornhub.com/';
 const bot = new Telegraf('5083324030:AAH0bYYyxcEymbAfSFeHCZ7-nhyRapMxC-E')
-bot.start((ctx) => ctx.reply('Я т11888ебе помогать не обязан'))
-bot.help((ctx) => ctx.reply('Я т11ебе помогать не обязан'))
+bot.start((ctx) => ctx.reply('Я тебе помогать не обязан'))
+bot.help((ctx) => ctx.reply('Я тебе помогать не обязан'))
 bot.on('sticker', (ctx) => ctx.reply('👍'))
 
 
-bot.hears('lapit', (ctx) => ctx.reply('НИХУ1!!1111 нЕ АДНАГО 99919	888слова блядь'))
+bot.hears('lapit', (ctx) => ctx.reply('НИХУ1!!нЕ АДНАГО слова блядь'))
 bot.hears('Влад лох', (ctx) => ctx.reply('Пошёл нахуй пидарсич Сам лох чмо ебАне'))
 bot.hears('Влад пидр', (ctx) => ctx.reply('Сам ты пидарас!!! Гандон еБанный'))
 bot.hears('а', (ctx) => ctx.reply(this))
@@ -17,19 +17,22 @@ bot.hears('тест?', (ctx) => ctx.chatMember)
 
 
 bot.hears('пидр', (ctx) => ctx.reply(`САМ таки Уёбищны! ${ctx.message.from.first_name ? ctx.message.from.first_name : 'Конча'}`))
-bot.hears('ставь', (ctx) => {
-	setInterval(() => {
-		ctx.reply('💩💩💩 Я обосрался 💩💩💩')
-	}, 1000);
-})
+// bot.hears('ставь', (ctx) => {
+// 	setInterval(() => {
+// 		ctx.reply('💩💩💩 Я обосрался 💩💩💩')
+// 	}, 1000);
+// })
 bot.hears('КОД15', (ctx) => {
-	let int = setInterval(() => {
+	ctx.reply('КОД15')
+	var int = setInterval(() => {
 		ctx.reply('💩💩💩 Я обосрался 💩💩💩')
 	}, 250);
 	
 	
 })
 bot.hears('КОД16', (ctx) => {
+	ctx.reply('КОД16')
+	
 	clearTimeout(int);
 })
 // bot.hears('нахуй', (ctx) => {
