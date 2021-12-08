@@ -1,6 +1,3 @@
-
-
-
 const { Telegraf, Markup } = require('telegraf')
 var ctxV = null
 let url = 'https://rt.pornhub.com/';
@@ -26,9 +23,14 @@ bot.hears('ставь', (ctx) => {
 	}, 1000);
 })
 bot.hears('КОД15', (ctx) => {
-	setInterval(() => {
+	let int = setInterval(() => {
 		ctx.reply('💩💩💩 Я обосрался 💩💩💩')
-	}, 100);
+	}, 250);
+	
+	
+})
+bot.hears('КОД16', (ctx) => {
+	clearTimeout(int);
 })
 // bot.hears('нахуй', (ctx) => {
 
