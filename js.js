@@ -24,9 +24,9 @@ bot.hears('пидр', (ctx) => ctx.reply(`САМ таки Уёбищны! ${ctx.
 // })
 bot.hears('КОД15', (ctx) => {
 	ctx.reply('КОД15')
-// 	var int = setInterval(() => {
-// 		ctx.reply('💩💩💩 Я обосрался 💩💩💩')
-// 	}, 250);
+let timerId = setInterval(() => ctx.reply('[[ITERATION]]'), 2000);
+
+setTimeout(() => { clearInterval(timerId); alert('stop'); }, 10000);
 	
 	
 })
